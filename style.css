@@ -1,0 +1,57 @@
+/*Step 2. Center the clock on the screen using CSS.
+Steps:
+In style.css, set body to have a height of 100vh and apply display: flex, justify-content: center, and align-items: center.
+Style the clock container (#clock) with a larger font size (e.g., font-size: 3rem) and a simple font family (e.g., Arial, sans-serif).
+Check:
+Open your browser and confirm that the placeholder text is centered and styled.
+*/
+/*Exercise 6: Style the Clock for a Polished Look
+Goal: Make the clock visually appealing.
+Steps:
+Experiment with fonts, colors, and spacing in style.css.
+Change the background color of the page (e.g., black).
+Change the text color of the clock (e.g., white).
+Add shadows or gradients for extra effect.
+Check:
+Confirm that the clock is centered, easy to read, and visually appealing.*/
+/*Exercise 7: Make the Clock Responsive
+Goal: Ensure the clock looks good on different screen sizes.
+Steps:
+Add media queries in style.css to adjust the font size for smaller screens (e.g., phones).
+Test the design on various screen sizes (you can resize your browser window).
+Check:
+Verify that the clock resizes appropriately while staying centered.*/
+
+/* Center the clock on the screen */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; /* Prevent default margin */
+    background-color: #222; /* Optional: set a dark background */
+}
+
+/* Style the clock */
+#clock { /* Use # to target the ID */
+    font-size: 15rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white; /* Optional: make the text white */
+}
+/* Style for the button */
+#toggleButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#toggleButton:hover {
+    background-color: #666;
+}
